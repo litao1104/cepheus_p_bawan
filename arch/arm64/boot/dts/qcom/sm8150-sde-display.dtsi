@@ -40,7 +40,7 @@
 #include "dsi-panel-tianma-fhd-nt36672a-video.dtsi"
 #include "dsi-panel-nt36850-truly-dualmipi-wqhd-cmd.dtsi"
 #include <dt-bindings/clock/mdss-10nm-pll-clk.h>
-/*
+
 &tlmm {
 	display_panel_avdd_eldo_default: display_panel_avdd_eldo_default {
 		mux {
@@ -55,7 +55,7 @@
 		};
 	};
 };
-*/
+
 &soc {
 	dsi_panel_pwr_supply: dsi_panel_pwr_supply {
 		#address-cells = <1>;
@@ -131,7 +131,7 @@
 		};
 	};
 
-/*
+
 	display_panel_avdd_eldo: display-gpio-regulator@0 {
 		compatible = "regulator-fixed";
 		regulator-name = "display_panel_avdd_eldo";
@@ -144,7 +144,7 @@
 		pinctrl-names = "default";
 		pintctrl-0 = <&display_panel_avdd_eldo_default>;
 	};
-*/
+
 	dsi_amoled_panel_pwr_supply: dsi_amoled_panel_pwr_supply {
 		#address-cells = <1>;
 		#size-cells = <0>;
@@ -517,7 +517,7 @@
 		vddio-supply = <&pm8150_l14>;
 		lab-supply = <&lcdb_ldo_vreg>;
 		ibb-supply = <&lcdb_ncp_vreg>;
-		//vdd-supply = <&display_panel_avdd_eldo>;
+		vdd-supply = <&display_panel_avdd_eldo>;
 		vci-supply = <&pm8150_l13>;
 
 		qcom,dsi-display-list =
@@ -573,7 +573,7 @@
 		vddio-supply = <&pm8150_l14>;
 		lab-supply = <&lcdb_ldo_vreg>;
 		ibb-supply = <&lcdb_ncp_vreg>;
-		//vdd-supply = <&display_panel_avdd_eldo>;
+		vdd-supply = <&display_panel_avdd_eldo>;
 
 		qcom,dsi-display-list =
 			<&dsi_nt35695b_truly_fhd_cmd_sec_display
