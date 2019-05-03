@@ -1,6 +1,6 @@
 #!/bin/bash
 
-AIK_DIR=/home/litao/Tools/AIK-Linux
+AIK_DIR=/home/litao/Tools/cepheus_AIK_tool
 KERNEL_DIR=`pwd`
 DTC_DIR=/home/litao/Tools/dtc-1.5.0
 GCC_DIR=/home/litao/Tools/aarch64-linux-android-4.9
